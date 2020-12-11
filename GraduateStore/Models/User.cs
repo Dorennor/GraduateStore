@@ -10,10 +10,5 @@ namespace GraduateStore.Models
     {
         private string Password { get; set; }
 
-        public User(string password)
-        {
-            Password = password;
-        }
-
     }
 }

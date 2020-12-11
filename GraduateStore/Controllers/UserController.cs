@@ -12,7 +12,7 @@ using Microsoft.Extensions.Logging;
 
 namespace GraduateStore.Controllers
 {
-    [Route("api/v1/messages")]
+    [Route("api/v1/auth")]
     [ApiController]
     public class UserController : ControllerBase
     {
@@ -26,6 +26,7 @@ namespace GraduateStore.Controllers
             _signInManager = signInManager;
             _mapper = mapper;
         }
+
 
         [HttpPost]
         public async Task<IActionResult> Index(UserLoginDto userLoginDto)
